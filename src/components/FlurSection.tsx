@@ -6,24 +6,16 @@ export default function FlurSection() {
   return (
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden bg-white flex items-center justify-center">
       <div 
-        className="absolute inset-0" 
-        style={{
-          backgroundImage: `
-            linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0)),
-            radial-gradient(circle, #e2e8f0 1px, transparent 1px)
-          `,
-          backgroundSize: '100% 100%, 16px 16px',
-          opacity: 0.5,
-        }}
+        className="absolute inset-0 bg-gray-100"
       ></div>
       <div className="container px-4 md:px-6 relative z-10">
         <div className="grid gap-6 lg:grid-cols-[1fr_600px] lg:gap-12 xl:grid-cols-[1fr_700px] items-center">
           <div className="flex flex-col justify-center space-y-4">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              Open Fractal
+            <h1 className="text-3xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none">
+              Introducing Flur
             </h1>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl">
-            Empowering the Fractal Bitcoin ecosystem with open source code and tooling to build better apps
+            <p className="max-w-[600px] text-muted-foreground font-medium md:text-lg">
+            A fully open source CAT-20 Minter.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button 
@@ -33,7 +25,7 @@ export default function FlurSection() {
                 className="transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg"
               >
                 <a href="https://flur.gg" target="_blank" rel="noopener noreferrer">
-                  View our CAT-20 Minter
+                  Check it Out
                 </a>
               </Button>
               <Button 
@@ -43,7 +35,7 @@ export default function FlurSection() {
                 className="transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
               >
                 <a href="https://flur.gg/docs" target="_blank" rel="noopener noreferrer">
-                  Build your own CAT-20 Minter
+                  Build Your Own
                 </a>
               </Button>
             </div>
@@ -52,7 +44,7 @@ export default function FlurSection() {
             <Link href="https://flur.gg" target="_blank" rel="noopener noreferrer" className="block w-full">
               <div className="relative w-full aspect-[16/9] transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg">
                 <Image
-                  src="/hero.png"
+                  src="/flur.png"
                   alt="Open Fractal Dashboard"
                   width={1920}
                   height={1080}
