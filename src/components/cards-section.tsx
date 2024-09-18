@@ -1,5 +1,6 @@
-import { CheckCircle2, Circle } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import React from 'react';
+import { LucideIcon, CheckCircle2, Circle } from 'lucide-react';
+import { Button } from './ui/button';
 
 export default function RoadmapSection() {
   return (
@@ -11,18 +12,18 @@ export default function RoadmapSection() {
             <div className="absolute left-0 top-0 bottom-0 w-1/3 bg-black animate-pulse"></div>
           </div>
           <RoadmapCard
-            icon={<CheckCircle2 className="w-6 h-6 text-black" />}
+            icon={CheckCircle2}
             title="CAT-20 Minter"
             status="Flur is the first CAT-20 Minter on Fractal Bitcoin. It's fully open source and available on GitHub."
             showButton={true}
           />
           <RoadmapCard
-            icon={<Circle className="w-6 h-6 text-gray-400 animate-spin" />}
+            icon={Circle}
             title="Bulk Minter"
             status="There is no way to mint CAT-20 tokens in bulk yet. This is a feature we are working on adding to Fractal Bitcoin."
           />
           <RoadmapCard
-            icon={<Circle className="w-6 h-6 text-gray-400" />}
+            icon={Circle}
             title="Marketplace"
             status="A fully functional NFT and token marketplace is one of the core features of Fractal Bitcoin. We are working on building this out."
           />
@@ -32,19 +33,24 @@ export default function RoadmapSection() {
   )
 }
 
-function RoadmapCard({ icon, title, status, showButton = false }) {
+interface RoadmapCardProps {
+  icon: LucideIcon;
+  title: string;
+  status: string;
+  showButton?: boolean;
+}
+
+function RoadmapCard({ icon: Icon, title, status, showButton = false }: RoadmapCardProps) {
   return (
     <div className="relative flex flex-col items-center p-6 bg-white rounded-lg shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md z-10">
       <div className="mb-4">
-        {icon}
+        <Icon className="w-8 h-8 text-primary" />
       </div>
-      <h3 className="text-xl font-semibold text-center mb-2">{title}</h3>
-      <p className="text-sm text-gray-500 text-center mb-4">{status}</p>
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-sm text-gray-600 mb-4">{status}</p>
       {showButton && (
-        <Button variant="default" className="bg-black text-white hover:bg-gray-800" asChild>
-          <a href="https://flur.gg" target="_blank" rel="noopener noreferrer">
-            Check it out
-          </a>
+        <Button variant="outline" size="sm">
+          Learn More
         </Button>
       )}
     </div>
