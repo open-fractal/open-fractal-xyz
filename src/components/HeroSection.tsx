@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden bg-white">
+    <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden bg-white flex items-center justify-center">
       <div 
         className="absolute inset-0" 
         style={{
@@ -23,7 +23,7 @@ export default function HeroSection() {
               Open Fractal
             </h1>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              Improving scale and accessibility of smart contracts and indexers on Fractal Bitcoin.
+            Empowering the Fractal Bitcoin ecosystem with open source code and tooling to build better apps
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button 
@@ -63,6 +63,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gray-200"></div>
     </section>
   )
 }
