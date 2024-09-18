@@ -12,19 +12,19 @@ export default function RoadmapSection() {
           </div>
           <RoadmapCard
             icon={<CheckCircle2 className="w-6 h-6 text-black" />}
-            title="Create open source CAT-20 Minter"
-            status="Completed"
+            title="CAT-20 Minter"
+            status="Flur is the first CAT-20 Minter on Fractal Bitcoin. It's fully open source and available on GitHub."
             showButton={true}
           />
           <RoadmapCard
             icon={<Circle className="w-6 h-6 text-gray-400 animate-spin" />}
-            title="Open source bulk mint CAT-20 tokens"
-            status="In progress"
+            title="Bulk Minter"
+            status="There is no way to mint CAT-20 tokens in bulk yet. This is a feature we are working on adding to Fractal Bitcoin."
           />
           <RoadmapCard
             icon={<Circle className="w-6 h-6 text-gray-400" />}
-            title="Open source Fractal Bitcoin NFT and token marketplace"
-            status="Upcoming"
+            title="Marketplace"
+            status="A fully functional NFT and token marketplace is one of the core features of Fractal Bitcoin. We are working on building this out."
           />
         </div>
       </div>
