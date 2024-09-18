@@ -24,11 +24,11 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`fixed top-0 left-0 right-0 w-full h-14 flex items-center text-gray-800 transition-all duration-300 z-50 ${isScrolled ? 'bg-white/80 backdrop-blur-[8px] border-b border-gray-200' : 'bg-transparent'}`}>
-        
+    <header className="fixed top-0 left-0 right-0 w-full h-14 flex items-center text-gray-800 transition-all duration-300 z-50 bg-white/80 backdrop-blur-[8px] border-b border-gray-200">
+
       <div className="w-full px-12 flex justify-between items-center">
         <Link className="flex items-center justify-center" href="/">
-          <span className="font-bold text-xl">Open Fractal</span>
+          <img src="/logo.svg" alt="OpenFractal" className="h-8 w-auto" />
         </Link>
         <nav className="flex items-center gap-4">
           <Link
