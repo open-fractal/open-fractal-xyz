@@ -1,14 +1,11 @@
 'use client'
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import { Github, Twitter } from 'lucide-react';
 
 export default function Header() {
-  // Remove the unused state if it's not being used
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       // This function is not using any state, so we can remove it
