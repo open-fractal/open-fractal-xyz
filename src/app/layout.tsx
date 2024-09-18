@@ -19,6 +19,16 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Open Fractal",
   description: "Empowering Fractal Bitcoin.",
+  openGraph: {
+    images: [
+      {
+        url: '/unfurl.png',
+        width: 1200,
+        height: 630,
+        alt: 'Open Fractal',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
