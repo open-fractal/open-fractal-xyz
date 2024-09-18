@@ -52,7 +52,7 @@ export default function HeroSection() {
             <Link href="https://flur.gg" target="_blank" rel="noopener noreferrer" className="block w-full">
               <div className="relative w-full aspect-[16/9] transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg">
                 <Image
-                  src="/hero.png"
+                  src="/placeholder.svg?height=1080&width=1920"
                   alt="Open Fractal Dashboard"
                   width={1920}
                   height={1080}
