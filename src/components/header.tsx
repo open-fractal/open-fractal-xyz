@@ -6,7 +6,8 @@ import Image from "next/image";
 import { Github, Twitter } from 'lucide-react';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Remove the unused state if it's not being used
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
