@@ -1,24 +1,12 @@
-'use client'
+'use client';
+
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import Link from "next/link";
-import { useEffect } from "react";
 import Image from "next/image";
 import { Github, Twitter } from 'lucide-react';
 
 export default function Header() {
-  useEffect(() => {
-    const handleScroll = () => {
-      // This function is not using any state, so we can remove it
-      // or implement the scroll behavior if needed
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
