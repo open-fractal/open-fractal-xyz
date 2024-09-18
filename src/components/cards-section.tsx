@@ -41,8 +41,10 @@ function RoadmapCard({ icon, title, status, showButton = false }) {
       <h3 className="text-xl font-semibold text-center mb-2">{title}</h3>
       <p className="text-sm text-gray-500 text-center mb-4">{status}</p>
       {showButton && (
-        <Button variant="default" className="bg-black text-white hover:bg-gray-800">
-          Check it out
+        <Button variant="default" className="bg-black text-white hover:bg-gray-800" asChild>
+          <a href="https://flur.gg" target="_blank" rel="noopener noreferrer">
+            Check it out
+          </a>
         </Button>
       )}
     </div>

@@ -1,69 +1,41 @@
-import Image from "next/image"
+import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
-export default function HeroSection() {
+export default function Component() {
   return (
-    <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden bg-white flex items-center justify-center">
+    <section className="relative bg-background text-center pb-0 mt-0 overflow-hidden">
       <div 
-        className="absolute inset-0" 
-        style={{
-          backgroundImage: `
-            linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0)),
-            radial-gradient(circle, #e2e8f0 1px, transparent 1px)
-          `,
-          backgroundSize: '100% 100%, 16px 16px',
-          opacity: 0.5,
-        }}
-      ></div>
-      <div className="container px-4 md:px-6 relative z-10">
-        <div className="grid gap-6 lg:grid-cols-[1fr_600px] lg:gap-12 xl:grid-cols-[1fr_700px] items-center">
-          <div className="flex flex-col justify-center space-y-4">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              Open Fractal
-            </h1>
-            <p className="max-w-[600px] text-muted-foreground md:text-xl">
-            Empowering the Fractal Bitcoin ecosystem with open source code and tooling to build better apps
-            </p>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button 
-                size="lg" 
-                variant="default" 
-                asChild
-                className="transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg"
-              >
-                <a href="https://flur.gg" target="_blank" rel="noopener noreferrer">
-                  View our CAT-20 Minter
-                </a>
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                asChild
-                className="transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg hover:bg-gray-100"
-              >
-                <a href="https://flur.gg/docs" target="_blank" rel="noopener noreferrer">
-                  Build your own CAT-20 Minter
-                </a>
-              </Button>
-            </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <Link href="https://flur.gg" target="_blank" rel="noopener noreferrer" className="block w-full">
-              <div className="relative w-full aspect-[16/9] transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg">
-                <Image
-                  src="/hero.png"
-                  alt="Open Fractal Dashboard"
-                  width={1920}
-                  height={1080}
-                  className="rounded-lg shadow-lg object-contain"
-                />
-              </div>
+        className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,transparent_10%,#000_100%)]"
+        aria-hidden="true"
+      />
+      <div className="relative px-4 z-10">
+        <div className="max-w-4xl w-full mx-auto mb-12 space-y-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mt-44">Open Fractal</h1>
+          <p className="text-lg text-muted-foreground max-w-lg mx-auto">
+            Building open source applications that power the Fractal Bitcoin ecosystem.
+          </p>
+          <Button asChild variant="default" size="lg">
+            <Link
+              href="https://github.com/open-fractal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View the Github
             </Link>
-          </div>
+          </Button>
+        </div>
+        <div className="w-2/3 mx-auto overflow-hidden rounded-t-[24px]">
+          <Image
+            src="/hero.png"
+            alt="Abstract fractal pattern"
+            width={1200}
+            height={300}
+            className="w-full h-auto max-h-[290px] object-cover"
+          />
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gray-200"></div>
+      <div className="w-full h-px bg-border absolute bottom-0"></div>
     </section>
   )
 }
