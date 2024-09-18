@@ -1,34 +1,37 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import Link from "next/link"
-import { Github, Twitter } from "lucide-react"
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { Github, Twitter } from 'lucide-react';
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
+      // This function is not using any state, so we can remove it
+      // or implement the scroll behavior if needed
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full h-14 flex items-center text-gray-800 transition-all duration-300 z-50 bg-white/80 backdrop-blur-[8px] border-b border-gray-200">
-
-      <div className="w-full px-12 flex justify-between items-center">
-        <Link className="flex items-center justify-center" href="/">
-          <img src="/logo.svg" alt="OpenFractal" className="h-8 w-auto" />
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href="/" className="text-2xl font-bold text-gray-800">
+          <Image
+            src="/logo.svg"
+            alt="Open Fractal Logo"
+            width={150}
+            height={40}
+            priority
+          />
         </Link>
         <nav className="flex items-center gap-4">
           <Link
@@ -48,5 +51,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
