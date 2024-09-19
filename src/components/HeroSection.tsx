@@ -13,9 +13,9 @@ export default function Component() {
         <div className="max-w-4xl w-full mx-auto mb-12 space-y-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mt-44">OpenFractal</h1>
           <p className="text-lg font-medium text-muted-foreground max-w-lg mx-auto">
-            Building open source applications and tools that power the Fractal Bitcoin ecosystem.
+            Building open source applications that power the Fractal Bitcoin ecosystem.
           </p>
-          <Button asChild variant="default" size="lg">
+          <Button asChild variant="default" size="lg" className="transition-transform duration-300 hover:scale-105">
             <Link
               href="https://github.com/open-fractal"
               target="_blank"
