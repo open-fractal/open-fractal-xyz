@@ -1,7 +1,7 @@
 import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
 import FlurSection from "@/components/FlurSection"
-import CardsSection from "@/components/cards-section"
+import CardsSection from "@/components/CardsSection"
 import ApiSection from "@/components/ApiSection"
 export default function Home() {
   return (
