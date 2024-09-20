@@ -2,7 +2,7 @@ import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
 import FlurSection from "@/components/FlurSection"
 import CardsSection from "@/components/cards-section"
-
+import ApiSection from "@/components/ApiSection"
 export default function Home() {
   return (
     <>
@@ -10,6 +10,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-between">
         <HeroSection />
         <FlurSection />
+        <ApiSection />
         <CardsSection />
       </main>
     </>
