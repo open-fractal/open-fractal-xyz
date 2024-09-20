@@ -6,7 +6,7 @@ export default function RoadmapSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
       <div className="container px-4 md:px-6 mx-auto ">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">What's Next?</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">What&apos;s Next?</h2>
         <div className="relative grid gap-8 md:grid-cols-3 justify-center">
           <div className="absolute top-1/2 left-0 right-0 h-1 bg-gray-200 transform -translate-y-1/2 hidden md:block">
             <div className="absolute left-0 top-0 bottom-0 w-1/3 bg-black animate-pulse"></div>
