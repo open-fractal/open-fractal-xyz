@@ -47,10 +47,14 @@ function RoadmapCard({ icon: Icon, title, status, showButton = false }: RoadmapC
         <Icon className="w-8 h-8 text-primary" />
       </div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-600 mb-4">{status}</p>
+      <p className="mt-2 text-lg leading-8 text-gray-600">
+        Don&apos;t just take our word for it - see what our customers have to say about their experience with Flur.
+      </p>
       {showButton && (
-        <Button variant="outline" size="sm">
-          Learn More
+        <Button variant="outline" size="sm" asChild>
+          <a href="https://flur.gg" target="_blank" rel="noopener noreferrer">
+            Learn More
+          </a>
         </Button>
       )}
     </div>
