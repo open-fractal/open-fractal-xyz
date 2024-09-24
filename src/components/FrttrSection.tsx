@@ -7,7 +7,7 @@ interface FrttrSectionProps {
   items: { title: string; description: string }[]
 }
 
-export function FrttrSection({ title, items }: FrttrSectionProps) {
+const FrttrSection = ({ title, items }: FrttrSectionProps) => {
   return (
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden bg-white flex items-center justify-center">
       <div 
@@ -54,3 +54,5 @@ export function FrttrSection({ title, items }: FrttrSectionProps) {
     </section>
   )
 }
+
+export default FrttrSection
