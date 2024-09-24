@@ -2,11 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-interface FrttrSectionProps {
-  title: string
-}
-
-const FrttrSection = ({ title }: FrttrSectionProps) => {
+const FrttrSection = () => {
   return (
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden bg-white flex items-center justify-center">
       <div 
