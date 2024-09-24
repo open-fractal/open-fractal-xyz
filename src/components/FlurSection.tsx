@@ -15,7 +15,7 @@ export default function FlurSection() {
               Introducing Flur
             </h1>
             <p className="max-w-[600px] text-muted-foreground font-medium md:text-lg">
-            A fully open source CAT-20 Minter with over 1,000,000 mint requests processed in the first day. Not bad for an example project, right?
+            A fully open source CAT-20 Minter with over 1,000,000 mint requests processed in the first day. 
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button 

@@ -7,9 +7,9 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: '1M+', label: 'Mints Processed' },
-  { value: '17k+', label: 'Unique Visitors' },
-  { value: '160k+', label: 'Page Views' },
+  { value: '1.5M+', label: 'Mints Processed' },
+  { value: '45k+', label: 'Unique Visitors' },
+  { value: '350k+', label: 'Page Views' },
   { value: '99.9%', label: 'Uptime' },
 ];
 
