@@ -1,9 +1,10 @@
 import Header from "@/components/header"
 import HeroSection from "@/components/HeroSection"
 import FlurSection from "@/components/FlurSection"
-import CardsSection from "@/components/CardsSection"
 import ApiSection from "@/components/ApiSection"
 import FrttrSection from "@/components/FrttrSection"
+import CardsSection from "@/components/CardsSection"
+import ContactSection from "@/components/ContactSection"
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
         <FlurSection />
         <ApiSection />
         <CardsSection />
-        <FrttrSection/>
+        <FrttrSection />
+        <ContactSection />
       </main>
     </>
   )
