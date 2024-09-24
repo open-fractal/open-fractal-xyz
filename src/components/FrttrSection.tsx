@@ -16,10 +16,10 @@ const FrttrSection = ({ title }: FrttrSectionProps) => {
         <div className="grid gap-6 lg:grid-cols-[1fr_600px] lg:gap-12 xl:grid-cols-[1fr_700px] items-center">
           <div className="flex flex-col justify-center space-y-4">
             <h1 className="text-3xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              {title}
+              An open-source decentralized social network.
             </h1>
             <p className="max-w-[600px] text-muted-foreground font-medium md:text-lg">
-              Fully open-sourced on-chain social networking protocol.
+            We are working on a new protocol for the future of social networks where everything is on chain.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button 
@@ -38,7 +38,7 @@ const FrttrSection = ({ title }: FrttrSectionProps) => {
             <Link href="https://frttr.vercel.app/" target="_blank" rel="noopener noreferrer" className="block w-full">
               <div className="relative w-full aspect-[16/9] transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-lg">
                 <Image
-                  src="/frttr.png"
+                  src="/browsers.png"
                   alt="Frttr Feature Image"
                   width={1920}
                   height={1080}

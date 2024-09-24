@@ -13,10 +13,8 @@ export default function Home() {
         <HeroSection />
         <FlurSection />
         <ApiSection />
-        <FrttrSection
-          title="Introducing Frttr"
-        />
         <CardsSection />
+        <FrttrSection/>
       </main>
     </>
   )
