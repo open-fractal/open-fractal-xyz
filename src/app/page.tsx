@@ -21,7 +21,6 @@ export default function Home() {
         <ApiSection />
         <FrttrSection
           title="Introducing Frttr"
-          items={frttrItems}
         />
         <CardsSection />
       </main>
