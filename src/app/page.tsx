@@ -3,6 +3,8 @@ import HeroSection from "@/components/HeroSection"
 import FlurSection from "@/components/FlurSection"
 import CardsSection from "@/components/CardsSection"
 import ApiSection from "@/components/ApiSection"
+import FrttrSection from "@/components/FrttrSection"
+
 export default function Home() {
   return (
     <>
@@ -11,6 +13,9 @@ export default function Home() {
         <HeroSection />
         <FlurSection />
         <ApiSection />
+        <FrttrSection
+          title="Introducing Frttr"
+        />
         <CardsSection />
       </main>
     </>
